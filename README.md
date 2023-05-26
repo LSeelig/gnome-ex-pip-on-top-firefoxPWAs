@@ -10,7 +10,7 @@ Run below in terminal one by one:
 ```sh
 mkdir -p ~/.local/share/gnome-shell/extensions
 cd ~/.local/share/gnome-shell/extensions
-git clone "https://github.com/LSeelig/gnome-ex-pip-on-top-firefoxPWA.git" "pip-on-top@lseelig.github.com"
+git clone "https://github.com/LSeelig/gnome-ex-pip-on-top-firefoxPWAs.git" "pip-on-top@lseelig.github.com"
 cd pip-on-top@lseelig.github.com
 glib-compile-schemas ./schemas/
 ```
