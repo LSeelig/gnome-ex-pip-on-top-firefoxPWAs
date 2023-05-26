@@ -1,15 +1,17 @@
-# gnome-shell-extension-pip-on-top
-Makes "Picture-in-Picture" windows stay on top (even on Wayland session). Compatible with Firefox and Clapper media player.
-
-[<img src="https://camo.githubusercontent.com/4f1e6d9a2288e9914688d4423892e930f814c7fd10b4ca3a704fe2d3ea927410/68747470733a2f2f6d696368656c65672e6769746875622e696f2f646173682d746f2d646f636b2f6d656469612f6765742d69742d6f6e2d65676f2e706e67" width="25%" height="25%">](https://extensions.gnome.org/extension/4691/pip-on-top)
-
+# gnome-ex-pip-on-top-firefoxPWAs
+## Fork Information
+This fork adds compatibility with FirefoxPWAs to the original extension. The extension uses window titles to detect a PiP window and make it stay on top, but while firefox PiP windows are conveniently titled "Picture-in-Picture", web apps installed on GNOME with [FirefoxPWA](https://github.com/filips123/PWAsForFirefox/issues/341) title the PiP with the app name. I am not seeking to add this to the upstream as there may be unintended consequences, and any app title has to be manually added. Supported PWA titles are listed below. Please ask if you want another added.
+## Supported Titles (in addition to the upstream)
+- YouTube
+- Hulu
+- Netflix
 ## Installation from source code
 Run below in terminal one by one:
 ```sh
 mkdir -p ~/.local/share/gnome-shell/extensions
 cd ~/.local/share/gnome-shell/extensions
-git clone "https://github.com/Rafostar/gnome-shell-extension-pip-on-top.git" "pip-on-top@rafostar.github.com"
-cd pip-on-top@rafostar.github.com
+git clone "https://github.com/LSeelig/gnome-ex-pip-on-top-firefoxPWA.git" "pip-on-top@lseelig.github.com"
+cd pip-on-top@lseelig.github.com
 glib-compile-schemas ./schemas/
 ```
 Additionally if you are running Firefox not in English language, execute `translate.sh` script to generate required translations:
