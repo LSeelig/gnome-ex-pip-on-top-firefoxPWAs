@@ -130,8 +130,11 @@ class PipOnTop
       || window.title == 'Picture-in-picture'
       || window.title.endsWith(' - PiP')
       /* Telegram support */
-      || window.title == 'TelegramDesktop');
-
+      || window.title == 'TelegramDesktop')
+      /* FirefoxPWA titles */
+      || window.title == 'YouTube'
+      || window.title == 'Hulu'
+      || window.title == 'Netflix';
     if (isPipWin || window._isPipAble) {
       let un = (isPipWin) ? '' : 'un';
 
